@@ -1,0 +1,37 @@
+.form {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 20vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.form form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    box-shadow: 0 0 20px 0 #61C,
+                0 0 30px 0 #61C,
+                0 0 10px 0 #61C inset;
+    border-radius: 20px;
+    padding: 1.4em;
+}
+
+.form form span[role="error"]{
+    margin: 0px 0px 20px 0;
+    color: red;
+}
+
+form > button {
+    margin-top: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .form form {
+        width: 70%;
+    }
+}

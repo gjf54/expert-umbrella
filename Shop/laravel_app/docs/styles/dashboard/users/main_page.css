@@ -1,0 +1,83 @@
+#return_to_dashboard_button {
+    margin: 20px 0 40px 0;
+}
+
+.users_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.users_group {
+    background: #DDD;
+    width: 80%;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.users_group .header_field{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px !important;
+    text-align: left;
+}
+
+.users_group .header_field span[role="group_title"] {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.user_field {
+    background: #FFF;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.user_field .user_login {
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.user_field .user_login[role="super_admin"] {
+    background: rgba(255, 0, 0, 0.1);
+    color: rgb(255, 0, 0);
+    padding: 5px;
+}
+
+.user_field .user_login[role="admin"] {
+    background: rgba(255, 50, 200, 0.2);
+    color: rgb(255, 50, 200);
+    padding: 5px;
+}
+
+.user_field .user_login[role="manager"] {
+    background: rgba(0, 255, 0, 0.1);
+    color: rgb(0, 255, 0);
+    padding: 5px;
+}
+
+.user_field .user_login[role="writer"] {
+    background: rgba(0, 0, 255, 0.1);
+    color: rgb(0, 0, 255);
+    padding: 5px;
+}
+
+.user_field .user_control_buttons {
+    
+}
+
+@media screen and (max-width: 766px) {
+    .user_field {
+        flex-direction: column;
+    }
+
+    .user_field .user_login {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,174 @@
+.project {
+    margin-top: 20px;
+    padding: 40px !important;
+}
+
+.project_view {
+    width: 100%;
+}
+
+.project span[role="project_name"] {
+    font-size: 22px;   
+    color: #444;
+    font-weight: bold;
+    margin: auto;
+    align-self: center;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    /* overflow: hidden; */
+}
+
+.project_view_user {
+    background: #DDD;
+    border-radius: 20px;
+    width: 60%;
+    padding: 5px;
+}
+
+.project_view_user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 90px;
+}
+
+.project_view_user span {
+    margin-left: 20px;
+}
+
+.project_view > div {
+    position: relative;
+    width: 80%;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.project_view > div * {
+    z-index: 2;
+}
+
+#project_background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: brightness(0.3);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+#project_report {
+    position: absolute;
+    z-index: 5;
+    width: 30px;
+    display: flex;
+    margin-left: auto;
+    height: auto;
+    margin: auto;
+    right: 0;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+#report_form {
+    position: absolute;
+    width: 350px;
+    padding: 10px;
+    background: #222;
+    border-radius: 20px;
+    z-index: 3;
+    border: 2px dashed #A3F;
+    visibility: hidden;
+    margin-top: 130px;
+    margin-left: 50px;
+    height: auto;
+}
+
+#report_form > * {
+    margin-bottom: 20px;
+}
+
+#report_form > span {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.project_view > div div {
+    padding: 10px;
+    height: 100%;
+}
+
+.project_view_controls {
+    height: 100%;   
+    align-items: flex-end;
+    text-align: center;
+}
+
+.project_view_controls a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.project_stats {
+    width: 80% !important;
+    margin: auto;
+    margin-left: 0;
+    margin-top: 10px;   
+    background: #EEE;
+    border-radius: 20px;
+    padding: 10px 0 10px 0;
+}
+
+.project_stats img {
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+
+.project_description {
+    padding: 20px;
+    background: #EEE;
+    border-radius: 20px;
+}
+
+.project_description span[role="description_title"] {
+    display: inline-block;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+@media screen and (max-width:990px) {
+    .project > div {
+        width: 60%;
+    }
+
+    .project_description {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project > div {
+        width: 80%;
+    }
+
+    .project_view > div {
+        height: 150px;
+        width: 130%;
+    }
+
+    .project_view_user {
+        width: 100%;
+    }
+
+    .project span[role="project_name"] {
+        font-size: 18px;
+    }
+}
+

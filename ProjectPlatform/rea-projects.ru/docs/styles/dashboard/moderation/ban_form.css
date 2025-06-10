@@ -1,0 +1,24 @@
+form {
+    width: 60%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 20px;
+    border: 2px #000 solid;
+    padding: 20px;
+}
+
+form > div {
+    margin-bottom: 20px !important;
+    width: 80% !important;
+}
+
+#form_button {
+    margin-bottom: 20px;
+}
+/* 
+form input, form textarea {
+    width: 100% !important; 
+} */

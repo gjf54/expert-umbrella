@@ -1,0 +1,17 @@
+#return_to_users_button {
+    margin: 20px 0 20px 0;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form form {
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 2px 3px 4px 3px #10F;
+    padding: 20px;
+}

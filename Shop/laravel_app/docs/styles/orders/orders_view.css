@@ -1,0 +1,32 @@
+.order_link {
+    text-decoration: none;
+    color: #000;
+}
+
+.order_container {
+    grid-template-columns: repeat(9 , 1fr);
+}
+
+.empty_orders {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+}
+
+.empty_orders img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.empty_orders span {
+    align-self: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+

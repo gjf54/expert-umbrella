@@ -1,0 +1,145 @@
+.search {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.search_bar {
+    width: 40%;
+    position: relative;
+}
+
+.search_bar input::before {
+    box-sizing: border-box;
+}
+
+.search_bar input {
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.search_bar a {
+    height: 50px;
+    border-radius: 20px;
+    width: 70px;
+    top: 0;
+    right: 0;
+    background: #EEE;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #91B;
+    text-decoration: none;
+    color: #000;
+}
+
+.search_list {
+    width: 35%;
+    position: relative;
+    height: auto;
+}
+
+#search_list {
+    position: absolute;
+    list-style-type: none;
+    width: 100%;
+    z-index: 3;
+    padding: 0;
+}
+
+#search_list > li {
+    background: #eee;
+    position: relative;
+    padding: 10px;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #999;
+}
+
+#search_list > li:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+}
+
+#search_list > li > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+.projects {
+    width: 90% !important;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.project {
+    border-radius: 20px;
+    padding: 10px;
+    min-height: 200px;
+    position: relative;
+}
+
+.project * {
+    z-index: 2;
+}
+
+#project_background {
+    width: 100%;
+    height: 100%;
+    background: #CCC;
+    z-index: 1;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project_top a {
+    color: #444;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    max-width: 90%;
+    max-height: 40%;
+}
+
+.project_down {
+    position: relative;
+    align-self: flex-end;
+    margin-top: auto;
+    height: auto;
+}
+
+.project_down_author {
+    max-width: 60%;
+}
+
+.project_down_author span[role="name"] {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project_down_author span[role="login"] {
+    font-size: 14px;
+}
+
+.project_down_stats {
+    max-width: 40%;
+}
+
+.project_down_stats div {
+    max-width: 45%;
+}
+
+.project_down_stats img {
+    width: 60%;
+    height: 60%;
+}
+
+
+

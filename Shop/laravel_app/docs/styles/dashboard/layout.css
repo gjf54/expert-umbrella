@@ -1,0 +1,15 @@
+#dashboard_nav_route {
+    position: relative;
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    top: 10px;
+}
+
+#dashboard_nav_route a {
+    font-size: 16px;
+}
+
+#dashboard a:first-child {
+    color: #32A;    
+}

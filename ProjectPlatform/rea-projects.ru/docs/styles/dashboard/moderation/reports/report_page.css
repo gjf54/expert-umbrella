@@ -1,0 +1,35 @@
+.report {
+    padding: 40px;
+}
+
+.report a {
+    text-decoration: none;
+}
+
+.report span[role="report_title"] {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.report_info > div {
+    background: #EEE;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.report_control {
+    background: #EEE;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.report_control > span { 
+    margin-bottom: 40px;
+}
+
+.report_control > div {
+    margin-bottom: 20px;
+    width: 70%;
+}

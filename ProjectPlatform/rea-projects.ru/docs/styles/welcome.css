@@ -1,0 +1,54 @@
+.header {
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.header_title {
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: DeleddaClosedBlack !important;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 20px 10px 20px 0 #61C,
+                0 0 30px 0 #61C,
+                0 0 10px 0 #61C inset;
+}
+
+.header_title > span {
+    color: #42F;
+}
+
+.header_text {
+    margin-top: 30px;
+    max-width: 65%;
+    color: #AAA;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#underheader {
+    height: 250px;
+    width: 700px;
+    filter: blur(2px);
+    position: relative;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 777px) {
+    #underheader {
+        width: 90%;
+        height: auto;
+    }
+
+    .header_title {
+        font-size: 38px;
+    }
+}

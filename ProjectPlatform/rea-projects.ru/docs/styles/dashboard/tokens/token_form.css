@@ -1,0 +1,17 @@
+form {
+    width: 40%;
+    margin: auto;
+    padding: 40px;
+    border-radius: 15px;
+    background: #EEE;
+}
+
+form > * {
+    margin-top: 20px;
+}
+
+#form_button {
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+}

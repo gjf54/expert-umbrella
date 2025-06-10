@@ -1,0 +1,42 @@
+.categories {
+    width: 80% !important;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.categories span[role="categories_title"] {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.category {
+    position: relative;
+    height: 220px;
+    min-width: 200px !important;
+}
+
+.category a {
+    position: relative;
+    width: 100%; 
+    height: 100%;
+    text-decoration: none;
+}
+
+.category img {
+    width: 90%;
+    height: 90%;
+    filter: brightness(0.4);
+    border-radius: 20px;
+    z-index: 1;
+    position: absolute;
+}
+
+.category span[role = "category_name"] {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 28px;
+    position: relative;
+    z-index: 2;
+}

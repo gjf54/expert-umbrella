@@ -1,0 +1,63 @@
+#back_to_profile {
+    margin: 20px 0 20px 0 !important;
+}
+
+.header {
+    max-width: 100%;
+    height: 30vh;
+    margin: 0px 40px 0 40px;
+    border: 3px solid #17F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 3px 4px 3px 2px #12F;
+}
+
+.header > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header div span[role="title"] {
+    font-weight: bold;
+    font-size: 36px;
+    color: #17F;
+}
+
+.header div span[role="description"] {
+    font-weight: 500;
+    font-size: 22px;
+    color: #888;
+    margin-top: 10px;
+}
+
+.select_setting {
+    margin-top: 40px !important;
+    height: 20vh;
+}
+
+.select_setting .setting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.select_setting .setting > a {
+    width: 80%;
+    height: 80%;   
+    background-color: #10F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.select_setting .setting > a span {
+    color: #FFF;
+}

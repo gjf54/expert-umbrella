@@ -1,0 +1,58 @@
+#return_back {
+    margin: 20px 0 40px 0;
+}
+
+.main > div {
+    height: 500px;
+}
+
+.image {
+    position: relative;
+    justify-content: center;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.image a {
+    position: absolute !important;
+    margin-top: auto;
+    width: 85%;
+    align-self: flex-end;
+    margin-bottom: 15px;
+}
+
+.info .info_el span[role="title"], .info_description span[role="title"] {
+    font-weight: bold;
+    font-size: 18px;
+    color: #555;
+}
+
+.info .info_el span[role="name"] {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.info .info_el span[role="price"] {
+    color: #193;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.info_description {
+    margin-top: 10%;
+}
+
+.info_edit {
+    margin-top: 10%;
+    max-width: 140px;
+}
+
+@media screen and (max-width: 991px) {
+    .main > div {
+        height: 300px;
+    }
+}

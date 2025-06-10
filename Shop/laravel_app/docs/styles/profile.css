@@ -1,0 +1,340 @@
+.header {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 2%;
+    position: relative;
+}
+
+.header .grey {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    align-self: flex-start;
+    background: #777;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.header_content {
+    margin-top: 50px;
+    margin-left: 50px;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header_content .main {
+    display: flex;
+    flex-direction: row;
+}
+
+.header img {
+    border-radius: 50%;
+    max-width: 250px;
+    min-width: 249px;
+    aspect-ratio: 1 / 1;
+}
+
+.header .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .text span[role="nameSurname"] {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.header .text span[role="login"] {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header .buttons {
+    margin-right: 90px;
+    width: 30%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: end;
+    place-self: start;
+    position: relative;
+}
+
+.header .buttons div {
+    place-self: center;
+}
+
+.buttons .first {
+    grid-column: 1 ;
+}
+
+.buttons .second {
+    grid-column: 2;
+}
+
+.buttons .third {
+    grid-column: 3;
+}
+
+.header .buttons a, .header .buttons button {
+    align-self: flex-start;
+}
+
+.header .buttons a[role="logout"] {
+    border: 2px solid #000;
+    border-radius: 10px;
+    position: relative;
+}
+
+.orders {
+    width: 80%;
+    position: relative;
+    margin: auto;
+    height: auto;
+    background: #DDD;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.void_orders {
+    width: 35% !important;
+    border: 2px solid #000 !important;
+    background-color: #FFF !important;
+}
+
+.orders > span {
+    color: rgba(37, 19, 238, 0.767);
+    font-weight: bold;
+    font-size: 42px;
+    margin: 10px 0 60px 0;
+}
+
+.orders > div {
+    width: 100% !important;
+}
+
+.order {
+    width: auto;
+    padding:10px;
+    background: #EEE;
+    border-radius: 20px;
+    border: 2px solid #000;
+    box-shadow: 0px 0px 30px 0 rgb(37, 19, 238),
+                0px 0px 10px rgb(37, 19, 238),
+                0px 0px 0 0 rgb(0, 0, 0) inset;
+    margin-bottom: 40px;
+}
+
+.order span[role="order_title"] {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.order_container {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.order_product {
+    background-color: #DDD;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.order_product_info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.order_product_info img {
+    width: 80px;
+    height: 130px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.order_product_info > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.order_product_info div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.order_product_info span[role="order_product_name"] {
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 85px;
+}
+
+.order_product_info span[role="order_product_amount"] {
+    font-size: 12px;
+    opacity: 0.7;
+    align-content: baseline;
+    width: 100%;
+}
+
+.order_product a {
+    text-decoration: none;
+    color: #000;
+}
+
+.order_products_view_more {
+    opacity: 0.6;
+    position: relative;
+}
+
+.order_products_view_more a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty_orders {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+}
+
+.empty_orders img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.empty_orders span {
+    align-self: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#view_all_orders {
+    display: flex;
+    width: 75%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #EEE;
+    opacity: 0.5;
+    padding: 1.1em;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .header img {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .header_content .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header_content .buttons {
+        margin-right: 190px;
+    }
+
+    .void_orders {
+        width: 60% !important; 
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .header {
+        justify-content: center;
+    }
+
+    .header .grey {
+        height: 170px;
+    }
+
+    .header_content {
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 20px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .header_content .main {
+        flex-direction: column;
+    }
+
+    .header_content img {
+        max-width: 200px;
+        align-self: center;
+    }
+
+    .header_content .buttons {
+        margin: auto;
+        width: 70%;
+        align-self: center;
+    }
+}
+
+
+
+@media screen and (max-width: 486px) {
+    .buttons {
+        margin-top: 10px !important;
+    }
+
+    .buttons .first {
+        grid-column: 2;
+    }
+
+    .buttons .second {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .buttons .third {
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    .order_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .void_orders {
+        width: 90% !important;
+    }
+}

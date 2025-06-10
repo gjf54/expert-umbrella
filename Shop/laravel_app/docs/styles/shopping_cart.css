@@ -1,0 +1,179 @@
+.products {
+    padding: 20px;
+    margin: 60px 40px 0px 40px;
+    background: #DDD;
+    border-radius: 20px;
+}
+
+.void_products {
+    background: #FFF;
+    width: 40%;
+    margin: auto;
+    margin-top: 100px;
+    border: 2px solid #000;
+}
+
+.empty_products {
+    width: 90%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+.empty_products img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.empty_products span {
+    align-self: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.product {
+    display: block;
+    background: #FFF;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px ;
+}
+
+.product[hidden="hidden"] {
+    display: none;
+}
+
+.product > a {
+    text-decoration: none;
+}
+
+.product_info img {
+    width: 100px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.product_info div {
+    margin-left: 10px;
+}
+
+.product_info div span[role="name"] {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.product_info div span[role="price"] {
+    color: #666;
+}
+
+.product_control_buttons span[id^="amount-"] {
+    width: 50px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.plus_button {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    
+    background:
+        linear-gradient(#000,#000),
+        linear-gradient(#000,#000);
+
+    background-position:center;
+    background-size: 50% 3px,3px 50%; 
+    background-repeat:no-repeat;
+
+}
+
+.minus_button {
+    display: inline-block;
+    background: 
+        linear-gradient(#000, #000);
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: 50% 3px, 3px 50%;
+    background-repeat: no-repeat;
+}
+
+.remove_button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50% 3px, 3px, 50%;
+    align-self: flex-start;
+    margin-left: 30px;
+}
+
+.remove_button::after {
+    content: "\274c";
+}
+
+.confirmation_window {
+    width: 300px;
+    display: none;
+    position: absolute;
+    margin: auto;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    border: 2px solid #000;
+
+    background: #FFF;
+    padding:20px;
+    border-radius: 20px;
+    align-items: center;
+    z-index: 101;
+}
+
+.confirmation_window span {
+    width: 80%;
+    text-align: center;
+}
+
+.confirmation_window div {
+    margin-top: 40px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 990px) {
+    .products {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .product {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product > a {
+        align-self: flex-start;
+    }
+
+    .product_control_buttons {
+        align-self: flex-end;
+    }
+}
+
+/* this condition is optional (+- 100px) */
+@media screen and (max-width: 486px) {
+    .products {
+        width: 90%
+    }
+}

@@ -1,0 +1,41 @@
+form {
+    max-width: 35%;
+    display: flex;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+    flex-direction: column;
+    margin-top: 60px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .2);
+}
+
+form > div {
+    margin-bottom: 20px;
+}
+
+#form_button {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;   
+}
+
+form a {
+    /* width: 40%; */
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    form {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    form {
+        max-width: 85%;
+    }
+}

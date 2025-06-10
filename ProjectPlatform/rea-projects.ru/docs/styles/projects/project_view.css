@@ -1,0 +1,8 @@
+iframe {
+    position: relative;
+    display: flex;
+    margin: auto;
+    margin-top: 5vh;
+    width: 80%;
+    height: 70vh;
+}

@@ -1,0 +1,41 @@
+span[role="ban_title"] {
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    left: 10px;
+}
+
+.ban_info, .ban_control {
+    padding: 40px;
+}
+
+.ban_info > div, .ban_control > div {
+    padding: 10px;
+    background: #EEE;
+    border-radius: 20px; 
+}
+
+.ban_info span {
+    font-size: 20px;
+}
+
+.ban_info a {
+    text-decoration: none;
+}
+
+.ban_reason, .ban_time {
+    margin-top: 20px;
+}
+
+.ban_reason span[role="ban_reason_title"] {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.ban_control span[role="ban_control_title"] {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 40px;
+}
