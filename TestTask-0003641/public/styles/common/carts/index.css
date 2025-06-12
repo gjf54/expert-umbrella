@@ -1,0 +1,36 @@
+@import url("../products/index.css");
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    gap: 15px;
+}
+
+.header__title {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.products__link {
+    max-height: 40%;
+}
+
+.products__controls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.products__element {
+    min-height: 100px;
+}
+
+.products__controls > div {
+    text-align: center;
+    font-weight: bold;
+}

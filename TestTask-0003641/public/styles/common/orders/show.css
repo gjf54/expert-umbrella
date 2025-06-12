@@ -1,0 +1,31 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    background-color: #EEE;
+    border-radius: 10px;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+
+.order__field {
+    font-size: 22px;
+    margin-bottom: 15px;
+    background: #DDD;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.order__link {
+    font-weight: bold;
+    color: #27F;
+    font-size: 28px;
+}
+
+.order__description {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 20px 0;
+    background: #CCC;
+    padding: 20px;
+}

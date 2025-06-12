@@ -1,0 +1,27 @@
+.categories {
+    width: 95%;
+    margin: auto;
+    background-color: #DDD;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.categories__element {
+    padding: 10px;
+    height: 80px;
+}
+
+.categories__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    background-color: #EEE;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}

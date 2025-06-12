@@ -1,0 +1,36 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 2px #000 solid;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.form__group {
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.form__label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form__input {
+    height: 40px;
+}
+
+.form__textarea {
+    height: 80px;
+    max-width: 100%;
+}
+
+
+.form__submit {
+    align-self: auto;
+}

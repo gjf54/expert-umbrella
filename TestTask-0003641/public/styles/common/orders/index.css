@@ -1,0 +1,38 @@
+.orders {
+    width: 95%;
+    margin: auto;
+    background-color: #DDD;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.orders__element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 80px;
+    margin-bottom: 30px;
+}
+
+.orders__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 40%;
+    padding: 5px;
+    background-color: #EEE;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.orders__description {
+    display: flex;
+    flex-direction: column;
+}
